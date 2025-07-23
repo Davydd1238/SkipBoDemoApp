@@ -30,7 +30,6 @@ namespace SkipBoDemoLibrary
             if (player.PlayingCards.Count == 0)
             {
                 cardDeck.DrawCards(player);
-                cardDeck.DrawCards(player);
             }
 
         }
