@@ -15,8 +15,7 @@ do
     cardDeck.DealStockPileCards(activePlayer);
     cardDeck.DealStockPileCards(opponent);
 } while (activePlayer.StockPile.Count < 30 && opponent.StockPile.Count < 30);
-//Test code.
-activePlayer.StockPile.Clear();
+
 do
 {
 

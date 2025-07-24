@@ -24,14 +24,18 @@ namespace SkipBoDemoLibrary
                 }
             return isWinner;
         }
-        public void PlayersTurn(PlayerModel player, CardDeck cardDeck)
+        public static void PlayersTurn(PlayerModel player, CardDeck cardDeck)
         {
+            bool playerDiscardedCard = false;
             cardDeck.DrawCards(player);
-            if (player.PlayingCards.Count == 0)
+            do
             {
-                cardDeck.DrawCards(player);
-            }
+                if (player.PlayingCards.Count == 0)
+                {
+                    cardDeck.DrawCards(player);
+                }
 
+            } while (playerDiscardedCard != true);
         }
     }
 }

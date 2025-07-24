@@ -72,6 +72,29 @@ namespace SkipBoDemoLibrary
                 FullDeck.RemoveRange(0, 1);
             } while (player.PlayingCards.Count < 5);
         }
-
+        public void DiscardOneCardToPileOne(PlayerModel player)
+        {
+            var card = player.PlayingCards.Take(1).ToString();
+            player.PlayingCards.Remove(card);
+            player.DiscardPileOne.Add(card);
+        }
+        public void DiscardOneCardToPileTwo(PlayerModel player)
+        {
+            var card = player.PlayingCards.Take(1).ToString();
+            player.PlayingCards.Remove(card);
+            player.DiscardPileTwo.Add(card);
+        }
+        public void DiscardOneCardToPileThree(PlayerModel player)
+        {
+            var card = player.PlayingCards.Take(1).ToString();
+            player.PlayingCards.Remove(card);
+            player.DiscardPileThree.Add(card);
+        }
+        public void DiscardOneCardToPileFour(PlayerModel player)
+        {
+            var card = player.PlayingCards.Take(1).ToString();
+            player.PlayingCards.Remove(card);
+            player.DiscardPileFour.Add(card);
+        }
     }
 }
