@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SkipBoDemoUI.ChooseHowManyPlayersPage">
+
+    <VerticalStackLayout>
+        <TitleBar 
+            Title="CHOOSE HOW MANY PLAYERS"
+            HorizontalOptions="Center"/>
+        <Button
+            x:Name="onePlayerBtn"
+            Text="One Player (vs. Computer)"
+            
+            HorizontalOptions="Center"/>
+    </VerticalStackLayout>
+</ContentPage>
